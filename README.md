@@ -6,7 +6,19 @@ This is a tweaking dll for GVim.
 
 ## Install
 
-copy vimtweak32.dll or vimtweak64.dll into same directory with gvim.exe
+The current version is include a `install.bat` which will automatically copy `vimtweak32.dll` or `vimtweak64.dll` to the `gvim.exe` directory. 
+
+The installation is easy by use [vim-plug](https://github.com/junegunn/vim-plug), just add
+
+```
+Plug 'vanabel/vimtweak', {'do', 'install.bat'}
+```
+in your work vimrc and run `:PlugInstall` in gvim.
+
+> But it should be noted that the path of `gvim.exe` maybe not correct. It is set to be `E:\Vim8\vim80\`, and I failed to detect it automatically by `where`. In that case, you should copy `vimtweak32.dll` or `vimtweak64.dll` into same directory with gvim.exe by hand after adding the following  in your vimrc
+```
+Plug 'vanabel/vimtweak'
+```
 
 ## Usage
 
